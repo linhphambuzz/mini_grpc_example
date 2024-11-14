@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package linh;
+
+
+service DataComm{
+    rpc SendFile(FileReq) returns (FileRes){}
+}
+
+message FileReq{
+    string request=1;
+}
+
+message FileRes{
+    string respond=1; 
+}
