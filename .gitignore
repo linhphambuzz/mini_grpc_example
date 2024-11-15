@@ -1,3 +1,3 @@
-./proto-src
+proto-src/
 *.o
 .vscode/
