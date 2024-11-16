@@ -5,10 +5,10 @@ A small example of writting client/server code implementing the C++ gRPC API to 
 ## Concept 
 ### Services Definition 
 Services are defined in [proto file](./linh.proto). gRPC uses what's called the "protobuf language" for their Interface Definition Language. This file includes: 
-    - package name : This will then be the `namespace` in all the generated code for implementation.
-    - name of the service (i.e:`DataComm`). This will be the based-class from which the service implementation class will be derived from. 
-    - methods to be implemented for the service
-    - messages definitions and their fields. 
+- package name : This will then be the `namespace` in all the generated code for implementation.
+- name of the service (i.e:`DataComm`). This will be the based-class from which the service implementation class will be derived from. 
+- methods to be implemented for the service
+- messages definitions and their fields. 
 
 
 

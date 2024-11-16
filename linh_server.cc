@@ -22,7 +22,8 @@ This is where all the service methods are implemented */
 class DataCommImpl final : public DataComm::Service {
 
 public: 
-    DataCommImpl();
+    DataCommImpl(){};
+    ~DataCommImpl(){};
     Status SendFile(ServerContext* context, const ::linh::FileReq* request, ::linh::FileRes* response) override{
         std::string file_resp="this is the file respond"; 
         response->set_respond(file_resp);
